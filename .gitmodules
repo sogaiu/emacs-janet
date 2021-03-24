@@ -1,0 +1,7 @@
+[submodule "emacs"]
+	path = emacs
+	url = https://github.com/emacs-mirror/emacs
+	branch = emacs-27
+[submodule "janet"]
+	path = janet
+	url = https://github.com/janet-lang/janet
