@@ -1,0 +1,31 @@
+* go over caveats and bugs section
+
+  https://phst.eu/emacs-modules.html#caveats-and-bugs
+
+* does the following text imply that doing this project is not feasible?
+
+    Module, initialization, and finalizer functions must either exit
+    the process or return locally; they mustn’t exit nonlocally (e.g.,
+    by using longjmp or C++ exceptions). Functions written in C++ must
+    be declared using the C language linkage.
+
+  because janet uses longjmp internally?
+
+* longjmp use
+
+  https://phst.eu/emacs-modules.html#emacs-may-jump-out-of-arbitrary-code-on-stack-overflow
+
+* -module-assertions while developing?
+
+  https://phst.eu/emacs-modules.html#module-assertions
+
+* references
+  * http://diobla.info/blog-archive/modules-tut.html
+  * https://www.gnu.org/software/emacs/manual/html_node/elisp/Dynamic-Modules.html
+  * https://phst.eu/emacs-modules.html
+  * https://lists.gnu.org/archive/html/emacs-devel/2015-02/msg00960.html (dated but useful?)
+  * https://github.com/syohex/emacs-lua
+  * https://github.com/jkitchin/emacs-modules
+  * https://nullprogram.com/blog/2016/11/05/
+  * https://github.com/tromey/emacs-ffi
+
